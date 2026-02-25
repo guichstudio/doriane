@@ -25,7 +25,8 @@ export default function Timeline({ activeIndex }: { activeIndex: number }) {
             key={scene.id}
             onClick={() => handleClick(scene.id)}
             title={scene.name}
-            className="relative z-10 p-1.5 group cursor-pointer"
+            aria-label={`Aller à ${scene.name}`}
+            className="relative z-10 p-2.5 group cursor-pointer"
           >
             <div
               className={`rounded-full transition-all duration-300 ${

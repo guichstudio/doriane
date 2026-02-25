@@ -326,6 +326,7 @@ export default function WorldMap({ onSelectScene, onStart }: WorldMapProps) {
       >
         <button
           onClick={() => setZoom((z) => Math.min(MAX_ZOOM, z + 0.5))}
+          aria-label="Zoom avant"
           className="w-9 h-9 rounded-full border border-pink/30 bg-black/60 backdrop-blur-sm text-pink flex items-center justify-center hover:bg-pink/10 transition-colors cursor-pointer"
         >
           +
@@ -336,6 +337,7 @@ export default function WorldMap({ onSelectScene, onStart }: WorldMapProps) {
             setZoom(next);
             setPan((p) => clampPan(p.x, p.y, next));
           }}
+          aria-label="Zoom arrière"
           className="w-9 h-9 rounded-full border border-pink/30 bg-black/60 backdrop-blur-sm text-pink flex items-center justify-center hover:bg-pink/10 transition-colors cursor-pointer"
         >
           −
@@ -346,6 +348,7 @@ export default function WorldMap({ onSelectScene, onStart }: WorldMapProps) {
               setZoom(1);
               setPan({ x: 0, y: 0 });
             }}
+            aria-label="Réinitialiser le zoom"
             className="w-9 h-9 rounded-full border border-pink/30 bg-black/60 backdrop-blur-sm text-pink flex items-center justify-center hover:bg-pink/10 transition-colors text-[10px] cursor-pointer"
           >
             ↺

@@ -28,7 +28,7 @@ export default function SceneBlock({
   const videoRef = useRef<HTMLVideoElement>(null);
   const isInView = useInView(containerRef, { amount: 0.3 });
   const isNear = useInView(containerRef, { margin: "200% 0px 200% 0px" });
-  const [preload, setPreload] = useState<"none" | "auto">("none");
+  const [preload, setPreload] = useState<"none" | "metadata">("none");
   const [isMobile, setIsMobile] = useState(false);
 
   // Detect mobile on mount
@@ -41,7 +41,7 @@ export default function SceneBlock({
 
   // Preload when near viewport (desktop only)
   useEffect(() => {
-    if (isNear && !isMobile) setPreload("auto");
+    if (isNear && !isMobile) setPreload("metadata");
   }, [isNear, isMobile]);
 
   // Play/pause video based on viewport visibility (desktop only)

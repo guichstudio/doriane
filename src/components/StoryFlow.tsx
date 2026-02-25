@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, useCallback } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { SCENES, ERAS } from "@/lib/scenes";
 import SceneBlock from "./SceneBlock";
@@ -16,7 +16,6 @@ export default function StoryFlow({
   onBack?: () => void;
 }) {
   const [activeIndex, setActiveIndex] = useState(0);
-  const sceneRefs = useRef<Map<string, HTMLElement>>(new Map());
 
   // Scroll to initial scene if selected from world map
   useEffect(() => {

@@ -1,0 +1,334 @@
+[
+  {
+    "id": "scene_01_martinique_childhood",
+    "name": "Les Premiers Pas",
+    "age": "5 ans",
+    "location": "Martinique",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_01_martinique_childhood.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_01_martinique_childhood.mp4"
+      }
+    ]
+  },
+  {
+    "id": "scene_02_martinique_carnival",
+    "name": "Carnaval",
+    "age": "7 ans",
+    "location": "Martinique",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_02_martinique_carnival.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_02_martinique_carnival.mp4"
+      }
+    ]
+  },
+  {
+    "id": "scene_03_martinique_garden",
+    "name": "Fleur des Îles",
+    "age": "10 ans",
+    "location": "Martinique",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_03_martinique_garden.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_03_martinique_garden.mp4"
+      }
+    ]
+  },
+  {
+    "id": "scene_04_limoges_winter",
+    "name": "Hiver à Limoges",
+    "age": "15 ans",
+    "location": "Limoges, France",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_04_limoges_winter.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_04_limoges_winter.mp4"
+      }
+    ]
+  },
+  {
+    "id": "scene_05_paris_cozy",
+    "name": "Soirées Parisiennes",
+    "age": "16 ans",
+    "location": "Paris, France",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_05_paris_cozy.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_05_paris_cozy.mp4"
+      }
+    ]
+  },
+  {
+    "id": "scene_06_paris_night",
+    "name": "Nuits de Paris",
+    "age": "18 ans",
+    "location": "Paris, France",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_06_paris_night.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_06_paris_night.mp4"
+      }
+    ]
+  },
+  {
+    "id": "scene_07_nyc_mets",
+    "name": "Game Night",
+    "age": "25 ans",
+    "location": "NYC, USA",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_07_nyc_mets.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_07_nyc_mets.mp4"
+      }
+    ]
+  },
+  {
+    "id": "scene_08_nyc_sunset",
+    "name": "Skyline Dorée",
+    "age": "25 ans",
+    "location": "NYC, USA",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_08_nyc_sunset.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_08_nyc_sunset.mp4"
+      }
+    ]
+  },
+  {
+    "id": "scene_09_dubai_desert",
+    "name": "Sable d'Or",
+    "age": "26 ans",
+    "location": "Dubai, UAE",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_09_dubai_desert.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_09_dubai_desert.mp4"
+      }
+    ]
+  },
+  {
+    "id": "scene_10_sicily_cefalu",
+    "name": "Dolce Vita",
+    "age": "26 ans",
+    "location": "Cefalù, Sicily",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_10_sicily_cefalu.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_10_sicily_cefalu.mp4"
+      }
+    ]
+  },
+  {
+    "id": "scene_11_miami_beach",
+    "name": "Ocean Drive",
+    "age": "27 ans",
+    "location": "Miami, USA",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_11_miami_beach.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_11_miami_beach.mp4"
+      }
+    ]
+  },
+  {
+    "id": "scene_12_los_angeles",
+    "name": "City of Angels",
+    "age": "27 ans",
+    "location": "Los Angeles, USA",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_12_los_angeles.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_12_los_angeles.mp4"
+      }
+    ]
+  },
+  {
+    "id": "scene_13_yosemite",
+    "name": "Wild & Free",
+    "age": "27 ans",
+    "location": "Yosemite, USA",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_13_yosemite.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_13_yosemite.mp4"
+      }
+    ]
+  },
+  {
+    "id": "scene_14_monument_valley",
+    "name": "Red Earth",
+    "age": "27 ans",
+    "location": "Monument Valley, USA",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_14_monument_valley.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_14_monument_valley.mp4"
+      }
+    ]
+  },
+  {
+    "id": "scene_15_hawaii",
+    "name": "Aloha",
+    "age": "28 ans",
+    "location": "Hawaii, USA",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_15_hawaii.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_15_hawaii.mp4"
+      }
+    ]
+  },
+  {
+    "id": "scene_16_bali",
+    "name": "Temple Sacré",
+    "age": "28 ans",
+    "location": "Bali, Indonesia",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_16_bali.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_16_bali.mp4"
+      }
+    ]
+  },
+  {
+    "id": "scene_17_singapore",
+    "name": "Néons d'Asie",
+    "age": "29 ans",
+    "location": "Singapore",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_17_singapore.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_17_singapore.mp4"
+      }
+    ]
+  },
+  {
+    "id": "scene_18_tokyo_disney",
+    "name": "The Surprise",
+    "age": "30 ans",
+    "location": "Tokyo Disneyland, Japan",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_18_tokyo_disney.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_18_tokyo_disney.mp4"
+      }
+    ]
+  },
+  {
+    "id": "scene_28_fete_foraine",
+    "name": "Fête Foraine — with Fiona",
+    "age": "18 ans",
+    "location": "Les Issambres, France",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_28_fete_foraine.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_28_fete_foraine.mp4"
+      }
+    ]
+  },
+  {
+    "id": "scene_29_chicago_river",
+    "name": "Chicago with Gabrielle",
+    "age": "27 ans",
+    "location": "Chicago, USA",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_29_chicago_river.png"
+      }
+    ]
+  },
+  {
+    "id": "scene_32_monument_valley_duo",
+    "name": "US Roadtrip with Silah",
+    "age": "27 ans",
+    "location": "Monument Valley, USA",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_32_monument_valley_duo.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_32_monument_valley_duo.mp4"
+      }
+    ]
+  }
+]

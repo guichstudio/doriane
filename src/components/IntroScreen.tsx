@@ -2,30 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-
-interface ParticleData {
-  left: string;
-  width: string;
-  height: string;
-  duration: number;
-}
-
-function Particle({ data, index }: { data: ParticleData; index: number }) {
-  return (
-    <motion.div
-      className="absolute rounded-full bg-pink/20"
-      style={{ left: data.left, width: data.width, height: data.height }}
-      initial={{ bottom: "-5%", opacity: 0 }}
-      animate={{ bottom: "105%", opacity: [0, 0.4, 0] }}
-      transition={{
-        duration: data.duration,
-        delay: index * 0.2,
-        repeat: Infinity,
-        ease: "linear",
-      }}
-    />
-  );
-}
+import Particle, { type ParticleData } from "./Particle";
 
 export default function IntroScreen({ onEnter }: { onEnter: () => void }) {
   const [particles, setParticles] = useState<ParticleData[]>([]);
@@ -51,7 +28,7 @@ export default function IntroScreen({ onEnter }: { onEnter: () => void }) {
     >
       {/* Particles */}
       {particles.map((p, i) => (
-        <Particle key={i} data={p} index={i} />
+        <Particle key={i} data={p} delay={i * 0.2} direction="up" />
       ))}
 
       {/* Content */}

@@ -288,8 +288,18 @@ export const SCENES: Scene[] = [
     era: "friends",
   },
   {
-    id: "scene_29_chicago_river",
+    id: "scene_28_fete_foraine",
     number: 27,
+    name: "Fête Foraine — with Fiona",
+    age: "18 ans",
+    location: "Les Issambres, France",
+    image: "/media/scene_28_fete_foraine.png",
+    video: "/media/scene_28_fete_foraine.mp4",
+    era: "friends",
+  },
+  {
+    id: "scene_29_chicago_river",
+    number: 28,
     name: "Chicago — with Gabrielle",
     age: "27 ans",
     location: "Chicago",
@@ -299,7 +309,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: "scene_30_princesses",
-    number: 28,
+    number: 29,
     name: "Bridgerton Experience — with Coline",
     age: "27 ans",
     location: "Bridgerton Experience",
@@ -309,7 +319,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: "scene_31_rooftop_night",
-    number: 29,
+    number: 30,
     name: "Rooftop Party — with Rocco & Hortense",
     age: "25 ans",
     location: "NYC",
@@ -319,7 +329,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: "scene_32_monument_valley_duo",
-    number: 30,
+    number: 31,
     name: "US Roadtrip — with Silah",
     age: "27 ans",
     location: "Monument Valley",

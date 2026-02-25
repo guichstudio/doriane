@@ -9,7 +9,21 @@ const geistSans = Geist({
 
 export const metadata: Metadata = {
   title: "Chapter One — Doriane",
-  description: "De la Martinique au monde entier — 5 ans à 30 ans",
+  description:
+    "De la Martinique au monde entier — 30 ans d'aventures en images et vidéos.",
+  openGraph: {
+    title: "Chapter One — Doriane",
+    description:
+      "De la Martinique au monde entier — 30 ans d'aventures en images et vidéos.",
+    type: "website",
+    locale: "fr_FR",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Chapter One — Doriane",
+    description:
+      "De la Martinique au monde entier — 30 ans d'aventures en images et vidéos.",
+  },
 };
 
 export default function RootLayout({

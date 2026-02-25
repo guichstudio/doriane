@@ -2,30 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-
-interface ParticleData {
-  left: string;
-  width: string;
-  height: string;
-  duration: number;
-}
-
-function Particle({ data, delay }: { data: ParticleData; delay: number }) {
-  return (
-    <motion.div
-      className="absolute rounded-full bg-pink/30"
-      style={{ left: data.left, width: data.width, height: data.height }}
-      initial={{ top: "-5%", opacity: 0 }}
-      animate={{ top: "105%", opacity: [0, 0.6, 0] }}
-      transition={{
-        duration: data.duration,
-        delay,
-        repeat: Infinity,
-        ease: "linear",
-      }}
-    />
-  );
-}
+import Particle, { type ParticleData } from "./Particle";
 
 export default function Finale() {
   const [particles, setParticles] = useState<ParticleData[]>([]);
@@ -45,7 +22,7 @@ export default function Finale() {
     <div className="relative h-screen-safe w-full flex items-center justify-center snap-start bg-background overflow-hidden">
       {/* Falling particles */}
       {particles.map((p, i) => (
-        <Particle key={i} data={p} delay={i * 0.3} />
+        <Particle key={i} data={p} delay={i * 0.3} direction="down" className="bg-pink/30" />
       ))}
 
       <div className="relative z-10 text-center px-6 w-full max-w-lg mx-auto">

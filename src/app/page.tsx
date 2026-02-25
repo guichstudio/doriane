@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
+import ErrorBoundary from "@/components/ErrorBoundary";
 import IntroScreen from "@/components/IntroScreen";
 import WorldMap from "@/components/WorldMap";
 import StoryFlow from "@/components/StoryFlow";
@@ -25,26 +26,28 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-background">
-      <AnimatePresence mode="wait">
-        {screen === "intro" && (
-          <IntroScreen key="intro" onEnter={handleEnter} />
-        )}
-        {screen === "worldmap" && (
-          <WorldMap
-            key="worldmap"
-            onSelectScene={handleSelectScene}
-            onStart={handleStart}
-          />
-        )}
-      </AnimatePresence>
+    <ErrorBoundary>
+      <main className="min-h-screen bg-background">
+        <AnimatePresence mode="wait">
+          {screen === "intro" && (
+            <IntroScreen key="intro" onEnter={handleEnter} />
+          )}
+          {screen === "worldmap" && (
+            <WorldMap
+              key="worldmap"
+              onSelectScene={handleSelectScene}
+              onStart={handleStart}
+            />
+          )}
+        </AnimatePresence>
 
-      {screen === "story" && (
-          <StoryFlow
-            initialScene={initialScene}
-            onBack={() => setScreen("worldmap")}
-          />
-        )}
-    </main>
+        {screen === "story" && (
+            <StoryFlow
+              initialScene={initialScene}
+              onBack={() => setScreen("worldmap")}
+            />
+          )}
+      </main>
+    </ErrorBoundary>
   );
 }
