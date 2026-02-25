@@ -8,9 +8,26 @@ import ChapterDivider from "./ChapterDivider";
 import Timeline from "./Timeline";
 import Finale from "./Finale";
 
-export default function StoryFlow() {
+export default function StoryFlow({
+  initialScene,
+  onBack,
+}: {
+  initialScene?: number | null;
+  onBack?: () => void;
+}) {
   const [activeIndex, setActiveIndex] = useState(0);
   const sceneRefs = useRef<Map<string, HTMLElement>>(new Map());
+
+  // Scroll to initial scene if selected from world map
+  useEffect(() => {
+    if (initialScene != null && initialScene >= 0 && initialScene < SCENES.length) {
+      const target = document.getElementById(SCENES[initialScene].id);
+      if (target) {
+        // Small delay to ensure DOM is ready
+        setTimeout(() => target.scrollIntoView({ behavior: "instant" }), 100);
+      }
+    }
+  }, [initialScene]);
 
   // Track which scene is currently in the center of the viewport
   useEffect(() => {
@@ -47,6 +64,24 @@ export default function StoryFlow() {
       transition={{ duration: 0.6 }}
     >
       <Timeline activeIndex={activeIndex} />
+
+      {/* Back to world map */}
+      {onBack && (
+        <motion.button
+          onClick={onBack}
+          className="fixed top-6 left-6 z-50 flex items-center gap-2 px-4 py-2 rounded-full
+                     border border-pink/30 bg-black/60 backdrop-blur-sm text-pink text-xs
+                     tracking-[0.1em] uppercase hover:bg-pink/10 transition-colors cursor-pointer"
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.5, duration: 0.4 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <span>←</span>
+          <span>Map</span>
+        </motion.button>
+      )}
 
       <div className="snap-y snap-mandatory">
         {SCENES.map((scene, i) => {

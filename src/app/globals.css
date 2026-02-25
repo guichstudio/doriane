@@ -4,6 +4,7 @@
   --background: #0a0a0a;
   --foreground: #ededed;
   --pink: #e74c8b;
+  --purple: #9b59b6;
 }
 
 @theme inline {
@@ -100,4 +101,19 @@ body {
   font-size: 0.75rem;
   color: var(--pink);
   letter-spacing: 0.1em;
+}
+
+/* World map pin pulse */
+@keyframes pin-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(231, 76, 139, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(231, 76, 139, 0);
+  }
+}
+
+.map-pin-pulse {
+  animation: pin-pulse 2.5s ease-in-out infinite;
+  border-radius: 9999px;
 }
