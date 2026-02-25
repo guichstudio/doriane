@@ -262,7 +262,7 @@ export default function WorldMap({ onSelectScene, onStart }: WorldMapProps) {
           The World of Doriane
         </h2>
         <p className="text-foreground/30 text-xs sm:text-sm tracking-[0.15em] uppercase">
-          26 souvenirs · 22 destinations · 3 continents
+          26 souvenirs · 21 destinations · 3 continents
         </p>
       </motion.div>
 
@@ -295,7 +295,7 @@ export default function WorldMap({ onSelectScene, onStart }: WorldMapProps) {
             {/* SVG map background */}
             <motion.img
               src="/world-map.svg"
-              alt=""
+              alt="World map showing travel destinations"
               className="absolute inset-0 w-full h-full pointer-events-none"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}

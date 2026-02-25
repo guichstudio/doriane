@@ -69,18 +69,17 @@ body {
 }
 
 /* GTA title style */
-.gta-title {
-  font-style: italic;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  color: var(--pink);
-  text-shadow: 0 0 40px rgba(231, 76, 139, 0.4);
-}
-
+.gta-title,
 .gta-title-purple {
   font-style: italic;
   font-weight: 800;
   letter-spacing: -0.02em;
+}
+.gta-title {
+  color: var(--pink);
+  text-shadow: 0 0 40px rgba(231, 76, 139, 0.4);
+}
+.gta-title-purple {
   color: var(--purple);
   text-shadow: 0 0 40px rgba(155, 89, 182, 0.4);
 }
@@ -105,19 +104,14 @@ body {
 }
 
 /* Scene number */
-.scene-number {
-  font-family: var(--font-mono, monospace);
-  font-size: 0.75rem;
-  color: var(--pink);
-  letter-spacing: 0.1em;
-}
-
+.scene-number,
 .scene-number-purple {
   font-family: var(--font-mono, monospace);
   font-size: 0.75rem;
-  color: var(--purple);
   letter-spacing: 0.1em;
 }
+.scene-number { color: var(--pink); }
+.scene-number-purple { color: var(--purple); }
 
 /* World map pin pulse */
 @keyframes pin-pulse {
@@ -132,4 +126,13 @@ body {
 .map-pin-pulse {
   animation: pin-pulse 2.5s ease-in-out infinite;
   border-radius: 9999px;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
