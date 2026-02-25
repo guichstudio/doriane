@@ -277,4 +277,14 @@ export const SCENES: Scene[] = [
     video: "/media/scene_26_ski_courchevel.mp4",
     era: "friends",
   },
+  {
+    id: "scene_27_dubai_marina",
+    number: 26,
+    name: "Dubai — with Giovanni",
+    age: "27 ans",
+    location: "Dubai",
+    image: "/media/scene_27_dubai_marina.png",
+    video: "/media/scene_27_dubai_marina.mp4",
+    era: "friends",
+  },
 ];
