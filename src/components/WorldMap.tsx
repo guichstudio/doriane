@@ -262,7 +262,7 @@ export default function WorldMap({ onSelectScene, onStart }: WorldMapProps) {
           The World of Doriane
         </h2>
         <p className="text-foreground/30 text-xs sm:text-sm tracking-[0.15em] uppercase">
-          24 souvenirs · 21 destinations · 3 continents
+          25 souvenirs · 22 destinations · 3 continents
         </p>
       </motion.div>
 

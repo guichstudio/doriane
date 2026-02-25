@@ -267,4 +267,14 @@ export const SCENES: Scene[] = [
     video: "/media/scene_25_grand_canyon.mp4",
     era: "friends",
   },
+  {
+    id: "scene_26_ski_courchevel",
+    number: 25,
+    name: "Courchevel — with Louis",
+    age: "27 ans",
+    location: "Courchevel",
+    image: "/media/scene_26_ski_courchevel.png",
+    video: "/media/scene_26_ski_courchevel.mp4",
+    era: "friends",
+  },
 ];

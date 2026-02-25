@@ -35,6 +35,7 @@ export const LOCATIONS: Location[] = [
   { name: "Orlando, USA", x: 23.8, y: 41.5, scenes: [] },
   { name: "San Francisco", x: 11.2, y: 37.0, scenes: [] },
   { name: "Grand Canyon, USA", x: 14.2, y: 38.8, scenes: [] },
+  { name: "Courchevel", x: 48.5, y: 30.5, scenes: [] },
 ];
 
 // Populate scenes into locations
