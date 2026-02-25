@@ -30,6 +30,7 @@ function MapPin({
   const [hovered, setHovered] = useState(false);
   const mainScene = location.scenes[0];
   const sceneIndex = SCENES.findIndex((s) => s.id === mainScene.id);
+  const isFriends = location.scenes.every((s) => s.era === "friends");
 
   // Scale down pins as user zooms in so they don't become huge
   const pinScale = 1 / Math.sqrt(zoom);
@@ -62,7 +63,11 @@ function MapPin({
       >
         {/* Main thumbnail */}
         {location.scenes.length === 1 ? (
-          <div className="w-11 h-11 sm:w-13 sm:h-13 rounded-full overflow-hidden border-2 border-pink/60 shadow-[0_0_12px_rgba(231,76,139,0.4)]">
+          <div className={`w-11 h-11 sm:w-13 sm:h-13 rounded-full overflow-hidden border-2 ${
+            isFriends
+              ? "border-purple/60 shadow-[0_0_12px_rgba(155,89,182,0.4)]"
+              : "border-pink/60 shadow-[0_0_12px_rgba(231,76,139,0.4)]"
+          }`}>
             <img
               src={mainScene.image}
               alt={mainScene.name}
@@ -81,7 +86,11 @@ function MapPin({
               return (
                 <div
                   key={scene.id}
-                  className="absolute top-1/2 left-1/2 w-9 h-9 sm:w-10 sm:h-10 -translate-x-1/2 -translate-y-1/2 rounded-full overflow-hidden border-2 border-pink/60 shadow-[0_0_10px_rgba(231,76,139,0.3)]"
+                  className={`absolute top-1/2 left-1/2 w-9 h-9 sm:w-10 sm:h-10 -translate-x-1/2 -translate-y-1/2 rounded-full overflow-hidden border-2 ${
+                    isFriends
+                      ? "border-purple/60 shadow-[0_0_10px_rgba(155,89,182,0.3)]"
+                      : "border-pink/60 shadow-[0_0_10px_rgba(231,76,139,0.3)]"
+                  }`}
                   style={{
                     transform: `translate(calc(-50% + ${offsetX}px), calc(-50% + ${offsetY}px))`,
                     zIndex: location.scenes.length - i,
@@ -107,8 +116,8 @@ function MapPin({
         animate={{ opacity: hovered ? 1 : 0, y: hovered ? 0 : 4 }}
         transition={{ duration: 0.15 }}
       >
-        <div className="bg-black/80 backdrop-blur-sm border border-pink/30 rounded-lg px-3 py-1.5 text-center">
-          <p className="text-pink text-xs font-semibold">{location.name}</p>
+        <div className={`bg-black/80 backdrop-blur-sm border ${isFriends ? "border-purple/30" : "border-pink/30"} rounded-lg px-3 py-1.5 text-center`}>
+          <p className={`${isFriends ? "text-purple" : "text-pink"} text-xs font-semibold`}>{location.name}</p>
           {location.scenes.length === 1 ? (
             <p className="text-foreground/50 text-[10px]">{mainScene.name}</p>
           ) : (
@@ -253,7 +262,7 @@ export default function WorldMap({ onSelectScene, onStart }: WorldMapProps) {
           The World of Doriane
         </h2>
         <p className="text-foreground/30 text-xs sm:text-sm tracking-[0.15em] uppercase">
-          17 souvenirs · 14 destinations · 3 continents
+          24 souvenirs · 21 destinations · 3 continents
         </p>
       </motion.div>
 

@@ -12,6 +12,7 @@ export interface Location {
 // Robinson base params: cx=400.168 cy=520.294 sx=140.113 sy=240.951
 // x_pct = (x_svg - 30.767) / 784.077 * 100, y_pct = (y_svg - 241.591) / 458.627 * 100
 export const LOCATIONS: Location[] = [
+  // Original timeline
   { name: "Martinique", x: 28.01, y: 50.47, scenes: [] },
   { name: "Limoges", x: 47.35, y: 31.06, scenes: [] },
   { name: "Paris", x: 47.69, y: 29.24, scenes: [] },
@@ -26,6 +27,14 @@ export const LOCATIONS: Location[] = [
   { name: "Bali", x: 82.97, y: 68.32, scenes: [] },
   { name: "Singapore", x: 79.13, y: 60.54, scenes: [] },
   { name: "Tokyo", x: 87.18, y: 35.86, scenes: [] },
+  // Friends timeline
+  { name: "Hains Falls, NY", x: 25.2, y: 33.2, scenes: [] },
+  { name: "Bryce Canyon", x: 14.8, y: 36.2, scenes: [] },
+  { name: "Times Square, NYC", x: 27.0, y: 35.2, scenes: [] },
+  { name: "Croatie", x: 52.0, y: 32.5, scenes: [] },
+  { name: "Orlando, USA", x: 23.8, y: 41.5, scenes: [] },
+  { name: "San Francisco", x: 11.2, y: 37.0, scenes: [] },
+  { name: "Grand Canyon, USA", x: 14.2, y: 38.8, scenes: [] },
 ];
 
 // Populate scenes into locations

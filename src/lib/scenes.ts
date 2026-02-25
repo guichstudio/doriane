@@ -200,7 +200,7 @@ export const SCENES: Scene[] = [
   {
     id: "scene_19_waterfall",
     number: 18,
-    name: "Force de la Nature",
+    name: "Force de la Nature — with Iona",
     age: "26 ans",
     location: "Hains Falls, NY",
     image: "/media/scene_19_waterfall.png",
@@ -220,7 +220,7 @@ export const SCENES: Scene[] = [
   {
     id: "scene_21_nyc_times_square",
     number: 20,
-    name: "NYC Pizza Night",
+    name: "NYC Pizza Night — with Angie",
     age: "25 ans",
     location: "Times Square, NYC",
     image: "/media/scene_21_nyc_times_square.png",
@@ -230,7 +230,7 @@ export const SCENES: Scene[] = [
   {
     id: "scene_22_gorge_swim",
     number: 21,
-    name: "Eau \u00c9meraude",
+    name: "Eau \u00c9meraude — with Quentin",
     age: "27 ans",
     location: "Croatie",
     image: "/media/scene_22_gorge_swim.png",
@@ -240,7 +240,7 @@ export const SCENES: Scene[] = [
   {
     id: "scene_23_theme_park",
     number: 22,
-    name: "Jouets G\u00e9ants",
+    name: "Jouets G\u00e9ants — with Hinatea",
     age: "27 ans",
     location: "Orlando, USA",
     image: "/media/scene_23_theme_park.png",
@@ -250,7 +250,7 @@ export const SCENES: Scene[] = [
   {
     id: "scene_24_golden_gate",
     number: 23,
-    name: "San Francisco",
+    name: "San Francisco — with Victor",
     age: "27 ans",
     location: "San Francisco",
     image: "/media/scene_24_golden_gate.png",
@@ -260,7 +260,7 @@ export const SCENES: Scene[] = [
   {
     id: "scene_25_grand_canyon",
     number: 24,
-    name: "Grand Canyon",
+    name: "Grand Canyon — with Charlotte",
     age: "27 ans",
     location: "Grand Canyon, USA",
     image: "/media/scene_25_grand_canyon.png",
