@@ -65,6 +65,7 @@ export default function SceneBlock({
   };
 
   const numberStr = String(scene.number).padStart(2, "0");
+  const isFriends = scene.era === "friends";
 
   return (
     <div
@@ -118,7 +119,7 @@ export default function SceneBlock({
       {/* Text overlay — safe area aware */}
       <div className="absolute bottom-0 left-0 right-0 p-6 pb-8 sm:p-8 sm:pb-10 md:p-12 md:pl-24 z-10 safe-bottom">
         <motion.p
-          className="scene-number mb-1.5 sm:mb-2"
+          className={`${isFriends ? "scene-number-purple" : "scene-number"} mb-1.5 sm:mb-2`}
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 0.6, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
@@ -128,7 +129,7 @@ export default function SceneBlock({
         </motion.p>
 
         <motion.h2
-          className="gta-title text-3xl sm:text-5xl md:text-6xl mb-2 sm:mb-3"
+          className={`${isFriends ? "gta-title-purple" : "gta-title"} text-3xl sm:text-5xl md:text-6xl mb-2 sm:mb-3`}
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}

@@ -6,11 +6,11 @@ export interface Scene {
   location: string;
   image: string;
   video: string | null;
-  era: "childhood" | "teen" | "world";
+  era: "childhood" | "teen" | "world" | "friends";
 }
 
 export interface Era {
-  id: "childhood" | "teen" | "world";
+  id: "childhood" | "teen" | "world" | "friends";
   label: string;
   subtitle: string;
   ageRange: string;
@@ -21,6 +21,7 @@ export const ERAS: Era[] = [
   { id: "childhood", label: "L'Enfance", subtitle: "Martinique", ageRange: "5 – 10 ans", startScene: 1 },
   { id: "teen", label: "L'Adolescence", subtitle: "France", ageRange: "15 – 18 ans", startScene: 4 },
   { id: "world", label: "Le Grand Voyage", subtitle: "Le Monde", ageRange: "25 – 30 ans", startScene: 6 },
+  { id: "friends", label: "Les Amis", subtitle: "Aventures \u00e0 Plusieurs", ageRange: "25 – 30 ans", startScene: 18 },
 ];
 
 export const SCENES: Scene[] = [
@@ -193,5 +194,77 @@ export const SCENES: Scene[] = [
     image: "/media/scene_18_tokyo_disney.png",
     video: "/media/scene_18_tokyo_disney.mp4",
     era: "world",
+  },
+
+  // ===== FRIENDS TIMELINE =====
+  {
+    id: "scene_19_waterfall",
+    number: 18,
+    name: "Force de la Nature",
+    age: "26 ans",
+    location: "Hains Falls, NY",
+    image: "/media/scene_19_waterfall.png",
+    video: "/media/scene_19_waterfall.mp4",
+    era: "friends",
+  },
+  {
+    id: "scene_20_bryce_canyon",
+    number: 19,
+    name: "Les Trois Explorateurs",
+    age: "27 ans",
+    location: "Bryce Canyon",
+    image: "/media/scene_20_bryce_canyon.png",
+    video: "/media/scene_20_bryce_canyon.mp4",
+    era: "friends",
+  },
+  {
+    id: "scene_21_nyc_times_square",
+    number: 20,
+    name: "NYC Pizza Night",
+    age: "25 ans",
+    location: "Times Square, NYC",
+    image: "/media/scene_21_nyc_times_square.png",
+    video: "/media/scene_21_nyc_times_square.mp4",
+    era: "friends",
+  },
+  {
+    id: "scene_22_gorge_swim",
+    number: 21,
+    name: "Eau \u00c9meraude",
+    age: "27 ans",
+    location: "Croatie",
+    image: "/media/scene_22_gorge_swim.png",
+    video: "/media/scene_22_gorge_swim.mp4",
+    era: "friends",
+  },
+  {
+    id: "scene_23_theme_park",
+    number: 22,
+    name: "Jouets G\u00e9ants",
+    age: "27 ans",
+    location: "Orlando, USA",
+    image: "/media/scene_23_theme_park.png",
+    video: "/media/scene_23_theme_park.mp4",
+    era: "friends",
+  },
+  {
+    id: "scene_24_golden_gate",
+    number: 23,
+    name: "San Francisco",
+    age: "27 ans",
+    location: "San Francisco",
+    image: "/media/scene_24_golden_gate.png",
+    video: "/media/scene_24_golden_gate.mp4",
+    era: "friends",
+  },
+  {
+    id: "scene_25_grand_canyon",
+    number: 24,
+    name: "Grand Canyon",
+    age: "27 ans",
+    location: "Grand Canyon, USA",
+    image: "/media/scene_25_grand_canyon.png",
+    video: "/media/scene_25_grand_canyon.mp4",
+    era: "friends",
   },
 ];

@@ -4,6 +4,10 @@ import { motion } from "framer-motion";
 import type { Era } from "@/lib/scenes";
 
 export default function ChapterDivider({ era }: { era: Era }) {
+  const isFriends = era.id === "friends";
+  const lineClass = isFriends ? "bg-purple/30" : "bg-pink/30";
+  const subtitleClass = isFriends ? "text-purple" : "text-pink";
+
   return (
     <div className="h-screen-safe w-full flex items-center justify-center snap-start bg-background px-6">
       <motion.div
@@ -15,7 +19,7 @@ export default function ChapterDivider({ era }: { era: Era }) {
       >
         {/* Top line */}
         <motion.div
-          className="mx-auto mb-6 sm:mb-8 h-px bg-pink/30"
+          className={`mx-auto mb-6 sm:mb-8 h-px ${lineClass}`}
           initial={{ width: 0 }}
           whileInView={{ width: 80 }}
           viewport={{ once: true }}
@@ -26,13 +30,13 @@ export default function ChapterDivider({ era }: { era: Era }) {
           {era.label}
         </h2>
 
-        <p className="text-base sm:text-lg tracking-widest text-pink mb-1.5 sm:mb-2">{era.subtitle}</p>
+        <p className={`text-base sm:text-lg tracking-widest ${subtitleClass} mb-1.5 sm:mb-2`}>{era.subtitle}</p>
 
         <p className="text-xs sm:text-sm text-foreground/30 tracking-wider">{era.ageRange}</p>
 
         {/* Bottom line */}
         <motion.div
-          className="mx-auto mt-6 sm:mt-8 h-px bg-pink/30"
+          className={`mx-auto mt-6 sm:mt-8 h-px ${lineClass}`}
           initial={{ width: 0 }}
           whileInView={{ width: 80 }}
           viewport={{ once: true }}
