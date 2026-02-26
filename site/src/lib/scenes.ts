@@ -364,7 +364,7 @@ export const SCENES: Scene[] = [
     age: "27 ans",
     location: "Miami",
     image: "/media/scene_36_miami_ocean.png",
-    video: null,
+    video: "/media/scene_36_miami_ocean.mp4",
     era: "friends",
   },
   {
