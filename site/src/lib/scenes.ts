@@ -370,7 +370,7 @@ export const SCENES: Scene[] = [
   {
     id: "scene_37_punta_cana_duo",
     number: 35,
-    name: "Punta Cana — with Stefi",
+    name: "Punta Cana — with Luzia",
     age: "27 ans",
     location: "Punta Cana",
     image: "/media/scene_37_punta_cana_duo.png",
