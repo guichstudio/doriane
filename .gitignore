@@ -13,3 +13,13 @@ out/
 # misc
 .DS_Store
 *.tsbuildinfo
+*.pyc
+
+# python
+.venv/
+__pycache__/
+
+# project
+output/
+memories/
+.claude/
