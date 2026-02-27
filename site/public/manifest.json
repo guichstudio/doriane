@@ -330,5 +330,85 @@
         "src": "/media/scene_32_monument_valley_duo.mp4"
       }
     ]
+  },
+  {
+    "id": "scene_33_disneyland",
+    "name": "Disneyland — with Julie",
+    "age": "",
+    "location": "",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_33_disneyland.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_33_disneyland.mp4"
+      }
+    ]
+  },
+  {
+    "id": "scene_34_paris_seine",
+    "name": "Seine by Night — with Laura",
+    "age": "",
+    "location": "",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_34_paris_seine.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_34_paris_seine.mp4"
+      }
+    ]
+  },
+  {
+    "id": "scene_36_miami_ocean",
+    "name": "Miami Beach",
+    "age": "",
+    "location": "",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_36_miami_ocean.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_36_miami_ocean.mp4"
+      }
+    ]
+  },
+  {
+    "id": "scene_37_punta_cana_duo",
+    "name": "Punta Cana — with a Friend",
+    "age": "",
+    "location": "",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_37_punta_cana_duo.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_37_punta_cana_duo.mp4"
+      }
+    ]
+  },
+  {
+    "id": "scene_38_punta_cana_group",
+    "name": "Punta Cana — Wedding Party",
+    "age": "",
+    "location": "",
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/scene_38_punta_cana_group.png"
+      },
+      {
+        "type": "video",
+        "src": "/media/scene_38_punta_cana_group.mp4"
+      }
+    ]
   }
 ]

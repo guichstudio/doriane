@@ -1089,9 +1089,8 @@ SCENES = {
     },
 
     "scene_38_punta_cana_group": {
-        "name": "Punta Cana Beach — Girls Trip",
-        "type": "image-to-image",
-        "source_image": "output/images/scene_37_punta_cana_duo.png",
+        "name": "Punta Cana — Wedding Party",
+        "type": "text-to-image",
         "aspect_ratio": "16:9",
         "duration": "5",
         "image_prompt": (
@@ -1099,22 +1098,36 @@ SCENES = {
             "Stylized 3D video game rendering, soft painterly textures, NOT a photograph, clearly a video game screenshot. "
             "SEEN FROM BEHIND — third-person gameplay camera positioned several meters behind "
             "and slightly above the characters, classic GTA V walking perspective. "
-            "Two young women SEEN FROM BEHIND walking side by side on a stunning white sand tropical beach "
-            "at Punta Cana — "
-            "the woman on the left with a long dark braid down her back, oval retro sunglasses, "
-            "wearing a colorful floral mini dress (orange, green, pink, purple flowers), "
-            "and her friend on the right with dark hair in a low ponytail, "
-            "wearing a crochet halter crop top with pink ties and yellow lace shorts, feather earring. "
-            "EXACT same characters and outfits, just on a beach now. "
-            "Ahead of them, turquoise Caribbean ocean, white sand, rows of tall coconut palm trees, "
-            "tropical resort buildings in the far background. "
-            "Bright Caribbean sun, warm golden light, soft atmospheric haze over the water, dreamy vacation atmosphere."
+            "A group of five friends and a baby SEEN FROM BEHIND standing together on a wooden boardwalk deck "
+            "at a tropical Caribbean resort at sunset — "
+            "Far left: a woman with light brown hair and a white lace headband, wearing an emerald green summer dress "
+            "and navy flat sandals. "
+            f"Second from left: a {DORIANE_ADULT} wearing a black crop top and light blue-white lace shorts, "
+            "beige heeled sandals. "
+            "Center: a tall Caucasian white-skinned man with short brown hair, seen from behind — "
+            "he wears a DARK NAVY BLUE suit jacket (very dark blue, almost black), "
+            "with a bright WHITE dress shirt underneath visible at the collar and between the lapels, "
+            "a small BLACK bow tie tied at the neck against the white shirt, "
+            "a single small white rose boutonnière pinned on the left lapel of the dark jacket, "
+            "dark dress pants matching the jacket, black leather dress shoes. "
+            "Fourth: an East Asian woman with straight dark hair and round glasses, light skin, wearing a colorful tropical floral maxi dress "
+            "(dark with purple, green, pink leaves), colorful sneakers. "
+            "Far right: a Black woman with long dark braids, wearing a teal emerald green off-shoulder dress, "
+            "holding a baby in a light blue outfit on her hip. "
+            "All five standing close together in a line, arms around each other's shoulders, "
+            "looking out toward the tropical resort grounds ahead. "
+            "Palm trees swaying in warm evening breeze, golden sunset sky with soft pink and orange clouds, "
+            "tropical resort with pool area visible in the distance. "
+            "Warm golden-hour lighting, soft atmospheric haze, cinematic depth of field, "
+            "tropical celebration atmosphere."
         ),
         "video_prompt": (
-            "Third-person gameplay camera following two young women from behind as they walk on a white sand beach. "
-            "Palm trees sway gently. Turquoise waves lap at the shore. Bright tropical sunlight. "
-            "Camera follows slowly, gentle drift. "
-            "Next-gen video game graphics, cinematic rendering, tropical paradise colors."
+            "Third-person gameplay camera positioned behind a group of five friends "
+            "as they walk FORWARD AWAY from the camera together on a wooden boardwalk at a tropical resort at sunset. "
+            "The group moves FORWARD into the scene, walking slowly side by side toward the resort, arms around each other. "
+            "Palm trees sway gently in the warm breeze. Golden sunset sky with pink clouds. "
+            "Camera stays still as they walk away into the distance. "
+            "Next-gen video game graphics, cinematic rendering, warm golden tropical colors."
         ),
     },
 }
