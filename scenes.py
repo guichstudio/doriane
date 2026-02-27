@@ -1089,7 +1089,7 @@ SCENES = {
     },
 
     "scene_38_punta_cana_group": {
-        "name": "Punta Cana — Wedding Party",
+        "name": "Punta Cana — avec Greg, Luzia, Stefi et Chloé",
         "type": "text-to-image",
         "aspect_ratio": "16:9",
         "duration": "5",

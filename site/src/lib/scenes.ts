@@ -377,4 +377,14 @@ export const SCENES: Scene[] = [
     video: "/media/scene_37_punta_cana_duo.mp4",
     era: "friends",
   },
+  {
+    id: "scene_38_punta_cana_group",
+    number: 36,
+    name: "Punta Cana — avec Greg, Luzia, Stefi et Chloé",
+    age: "27 ans",
+    location: "Punta Cana",
+    image: "/media/scene_38_punta_cana_group.png",
+    video: "/media/scene_38_punta_cana_group.mp4",
+    era: "friends",
+  },
 ];
