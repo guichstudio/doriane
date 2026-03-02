@@ -7,6 +7,7 @@ import SceneBlock from "./SceneBlock";
 import ChapterDivider from "./ChapterDivider";
 import Timeline from "./Timeline";
 import Finale from "./Finale";
+import GiftBox from "./GiftBox";
 
 export default function StoryFlow({
   initialScene,
@@ -93,6 +94,7 @@ export default function StoryFlow({
           );
         })}
 
+        <GiftBox />
         <Finale />
       </div>
     </motion.div>
