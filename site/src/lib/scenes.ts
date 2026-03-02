@@ -21,7 +21,7 @@ export const ERAS: Era[] = [
   { id: "childhood", label: "L'Enfance", subtitle: "Martinique", ageRange: "5 – 10 ans", startScene: 1 },
   { id: "teen", label: "L'Adolescence", subtitle: "France", ageRange: "15 – 18 ans", startScene: 4 },
   { id: "world", label: "Le Grand Voyage", subtitle: "Le Monde", ageRange: "25 – 30 ans", startScene: 6 },
-  { id: "friends", label: "Les Amis", subtitle: "Aventures \u00e0 Plusieurs", ageRange: "25 – 30 ans", startScene: 18 },
+  { id: "friends", label: "Les Amis", subtitle: "Aventures \u00e0 Plusieurs", ageRange: "25 – 30 ans", startScene: 19 },
 ];
 
 export const SCENES: Scene[] = [
@@ -186,8 +186,18 @@ export const SCENES: Scene[] = [
     era: "world",
   },
   {
-    id: "scene_18_tokyo_disney",
+    id: "scene_tokyo_drift",
     number: 17,
+    name: "Tokyo Drift",
+    age: "29 ans",
+    location: "Tokyo",
+    image: "/media/scene_tokyo_drift.png",
+    video: "/media/scene_tokyo_drift.mp4",
+    era: "world",
+  },
+  {
+    id: "scene_18_tokyo_disney",
+    number: 18,
     name: "The Surprise",
     age: "30 ans",
     location: "Tokyo",
@@ -199,7 +209,7 @@ export const SCENES: Scene[] = [
   // ===== FRIENDS TIMELINE =====
   {
     id: "scene_19_waterfall",
-    number: 18,
+    number: 19,
     name: "Force de la Nature — with Iona",
     age: "26 ans",
     location: "Hains Falls, NY",
@@ -209,7 +219,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: "scene_20_bryce_canyon",
-    number: 19,
+    number: 20,
     name: "Les Trois Explorateurs",
     age: "27 ans",
     location: "Bryce Canyon",
@@ -219,7 +229,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: "scene_21_nyc_times_square",
-    number: 20,
+    number: 21,
     name: "NYC Pizza Night — with Angie",
     age: "25 ans",
     location: "Times Square, NYC",
@@ -229,7 +239,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: "scene_22_gorge_swim",
-    number: 21,
+    number: 22,
     name: "Eau \u00c9meraude — with Quentin",
     age: "27 ans",
     location: "Croatie",
@@ -239,7 +249,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: "scene_23_theme_park",
-    number: 22,
+    number: 23,
     name: "Jouets G\u00e9ants — with Hinatea",
     age: "27 ans",
     location: "Orlando, USA",
@@ -249,7 +259,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: "scene_24_golden_gate",
-    number: 23,
+    number: 24,
     name: "San Francisco — with Victor",
     age: "27 ans",
     location: "San Francisco",
@@ -259,7 +269,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: "scene_25_grand_canyon",
-    number: 24,
+    number: 25,
     name: "Grand Canyon — with Charlotte",
     age: "27 ans",
     location: "Grand Canyon, USA",
@@ -269,7 +279,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: "scene_26_ski_courchevel",
-    number: 25,
+    number: 26,
     name: "Courchevel — with Louis",
     age: "27 ans",
     location: "Courchevel",
@@ -279,7 +289,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: "scene_27_dubai_marina",
-    number: 26,
+    number: 27,
     name: "Dubai — with Giovanni",
     age: "27 ans",
     location: "Dubai",
@@ -289,7 +299,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: "scene_28_fete_foraine",
-    number: 27,
+    number: 28,
     name: "Fête Foraine — with Fiona",
     age: "18 ans",
     location: "Les Issambres, France",
@@ -299,7 +309,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: "scene_29_chicago_river",
-    number: 28,
+    number: 29,
     name: "Chicago — with Gabrielle",
     age: "27 ans",
     location: "Chicago",
@@ -309,7 +319,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: "scene_30_princesses",
-    number: 29,
+    number: 30,
     name: "Bridgerton Experience — with Coline",
     age: "27 ans",
     location: "Bridgerton Experience",
@@ -319,7 +329,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: "scene_31_rooftop_night",
-    number: 30,
+    number: 31,
     name: "Rooftop Party — with Rocco & Hortense",
     age: "25 ans",
     location: "NYC",
@@ -329,7 +339,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: "scene_32_monument_valley_duo",
-    number: 31,
+    number: 32,
     name: "US Roadtrip — with Silah",
     age: "27 ans",
     location: "Monument Valley",
@@ -339,7 +349,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: "scene_33_disneyland",
-    number: 32,
+    number: 33,
     name: "Disneyland — with Julie",
     age: "27 ans",
     location: "Disneyland Paris",
@@ -349,7 +359,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: "scene_34_paris_seine",
-    number: 33,
+    number: 34,
     name: "Seine by Night — with Laura",
     age: "27 ans",
     location: "Paris",
@@ -359,7 +369,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: "scene_36_miami_ocean",
-    number: 34,
+    number: 35,
     name: "Miami Beach — with Alison",
     age: "27 ans",
     location: "Miami",
@@ -369,7 +379,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: "scene_38_punta_cana_group",
-    number: 35,
+    number: 36,
     name: "Punta Cana — avec Greg, Luzia, Stefi et Chloé",
     age: "27 ans",
     location: "Punta Cana",
@@ -379,7 +389,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: "scene_39_halloween_nyc",
-    number: 36,
+    number: 37,
     name: "Halloween NYC — with Romane",
     age: "27 ans",
     location: "NYC",
@@ -389,7 +399,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: "scene_40_nyc_subway_pizza",
-    number: 37,
+    number: 38,
     name: "NYC Pizza Night — with Célia",
     age: "27 ans",
     location: "NYC",
@@ -399,7 +409,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: "scene_41_night_hangout",
-    number: 38,
+    number: 39,
     name: "Night Out — with Jonathan et Louise",
     age: "27 ans",
     location: "France",
