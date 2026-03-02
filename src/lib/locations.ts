@@ -40,6 +40,8 @@ export const LOCATIONS: Location[] = [
   { name: "Bridgerton Experience", x: 48.0, y: 28.0, scenes: [] },
   { name: "NYC", x: 26.5, y: 34.8, scenes: [] },
   { name: "Les Issambres, France", x: 48.8, y: 33.0, scenes: [] },
+  { name: "Disneyland Paris", x: 47.9, y: 29.8, scenes: [] },
+  { name: "Punta Cana", x: 25.5, y: 47.5, scenes: [] },
 ];
 
 // Populate scenes into locations
