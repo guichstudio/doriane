@@ -23,3 +23,6 @@ __pycache__/
 output/
 memories/
 .claude/
+
+# duplicate site directory (root is the source of truth for Vercel)
+site/
